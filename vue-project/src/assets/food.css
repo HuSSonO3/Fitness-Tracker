@@ -1,0 +1,172 @@
+
+.body{
+    background-color: #242725;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+}
+    
+.MyDish{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.6rem;
+    font-family: "Antonio", sans-serif;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.MyDish .mainTextContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.MyDish .mainTextContainer h2{
+    color: #7C66C5;
+    font-size: 3.5rem;
+}
+
+.MyDish .mainTextContainer .button{
+    margin-right: 2rem;
+}
+
+.MyDish .ReceipeContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.MyDish .ReceipeContainer .leftFloat{ 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
+    justify-content: center;
+    background-color: #7C66C5;
+    box-shadow: 8px 8px var(--neon_green);
+    margin-right: 4rem;
+}
+
+.MyDish .ReceipeContainer .leftFloat .Image{
+    align-self: center;
+    width: 25rem;
+    height: 25rem;
+}
+
+.MyDish .ReceipeContainer .leftFloat .Image img{
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.MyDish .ReceipeContainer .rightFloat{
+    width: 60%;
+    font-family: "Gabarito", sans-serif;
+}
+
+.MyDish .ReceipeContainer .rightFloat h4{
+    font-size: 2.5rem;
+}
+
+.MyDish .ReceipeContainer .rightFloat .dishDetails{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.MyDish .ReceipeContainer .rightFloat .dishDetails h5 {
+    margin-right: 30rem;
+}
+
+.MyDish .ReceipeContainer .rightFloat .dishDetails .holder{
+    width: 26rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    font-weight: 100;
+}
+
+.MyDish .ReceipeContainer .rightFloat .dishDetails .holder .text1{
+    opacity: 70%;
+}
+
+/*  */
+
+.MyDish .ReceipeContainer .rightFloat .dishStats{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.MyDish .ReceipeContainer .rightFloat .dishStats h5 {
+    margin-right: 30rem;
+}
+
+.MyDish .ReceipeContainer .rightFloat .dishStats .holder{
+    width: 26rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    font-weight: 100;
+}
+
+.MyDish .ReceipeContainer .rightFloat .dishStats .holder .text1{
+    opacity: 70%;
+}
+
+/*  */
+
+.MyDish .ReceipeContainer .rightFloat .dishIngs {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.MyDish .ReceipeContainer .rightFloat .dishIngs h5 {
+    margin-right: 30rem;
+}
+
+.MyDish .ReceipeContainer .rightFloat .dishIngs .holder{
+    width: 26rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    font-weight: 100;
+}
+
+.MyDish .ReceipeContainer .rightFloat .dishIngs .holder .text1{
+    opacity: 70%;
+}
+
+.MyDish .seperator{
+    width: 10rem;
+    justify-self: center;
+    opacity: 50%;
+}
+
+.MyDish .InstructionsContainer{
+    margin-top: 4rem;
+    font-family: "Gabarito", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.MyDish .InstructionsContainer ul{
+    list-style-type:disc;
+    opacity: 80%;
+}
+
+.MyDish .InstructionsContainer .Bon{
+    margin-top: 2rem;
+    align-self: center;
+    margin-bottom: 0;
+}

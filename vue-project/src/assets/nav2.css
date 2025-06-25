@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Gabarito&display=swap');
+
+
+.navbar{
+font-family: "Gabarito", sans-serif;
+background-color: var(--purple_bg);
+
+}
+
+.navbar-brand{
+font-family: "Antonio", sans-serif;
+font-weight: 700;
+font-size: 2rem;
+margin-left: 2rem;
+color: var(--neon_green);
+}
+
+
+.navbar-nav{
+gap: 2rem;
+}
+
+.nav-item{
+display: flex;
+flex-direction: row;
+font-size: 1.2rem;
+}
+
+.nav-seperator {
+border-left: 2px solid var(--neon_green);
+margin-top: 0.3rem;
+height: 2rem;
+}
+
+.navbar-brand:hover { 
+color: var(--neon_green);
+}
+
+.nav-link{
+color: var(--neon_green);
+
+}
+
+.nav-link:hover { 
+color: var(--neon_green);
+}
+
+.LogginBttnContainer{
+margin-right: 0.5rem;
+}
+
+.extra{
+margin-top: 1rem;
+}
+
+.LoginBttn{
+font-family: "Antonio", sans-serif;
+background-color: var(--neon_green);
+color: black;
+padding: 0.5rem 1rem;
+font-weight: bold;
+border: none;
+text-decoration: none;
+}
+
+.offcanvas{
+background-color: var(--purple_bg);
+width: 15rem;
+}
+.offcanvas-title{
+color: white;
+}
+
+.custom-show {
+display: none;
+}
+
+@media (min-width: 900px) {
+.custom-show {
+  display: block;
+}
+}
+
+.navbar-toggler-icon{
+filter: invert(82%) sepia(14%) saturate(2114%) hue-rotate(63deg) brightness(110%) contrast(100%);
+}
+
+.btn-close{
+filter: invert(82%) sepia(14%) saturate(2114%) hue-rotate(63deg) brightness(110%) contrast(100%);
+
+}
+.btn-close:focus-visible{
+outline: none;
+}
+
+.offcanvas-title{
+font-family: "Antonio", sans-serif;
+font-weight: 700;
+font-size: 1.3rem;
+padding-left: 0.5rem;
+color: var(--neon_green);
+}
+
+.dropbtn {
+  padding-top: 0.2rem;
+  background-color: var(--purple_bg);
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0.6rem;
+  background-color: var(--purple_bg);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content .dropdownData {
+  color: white;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content .dropdownData p{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.dropdownData:hover{
+  background-color: var(--neon_green);
+  color: black;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+

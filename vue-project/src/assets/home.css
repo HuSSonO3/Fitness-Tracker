@@ -1,0 +1,93 @@
+
+.body{
+    background-color: #242725;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+}
+
+.MyHome{
+    margin-top: 4.6rem;
+    font-family: "Antonio", sans-serif;
+    margin-left: 3rem;    
+}
+
+.MyHome .homeCard {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.MyHome .homeCard .homeCs {
+  background-color: rgb(227, 227, 227);
+  padding: 1rem;
+  box-shadow: 8px 8px var(--neon_green);
+}
+
+.MyHome canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.MyHome h2{
+    color: #7C66C5;
+    font-size: 3.5rem;
+}
+
+.MyHome .stats{
+    color: #7C66C5;
+    font-size: 2rem;
+}
+
+.MyHome .homeContainer{
+    margin-bottom: 3rem;
+}
+
+/* .MyHome .homeContainer .homeCard{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    flex-wrap: wrap;
+    margin-left: 8rem;
+
+} */
+
+.MyHome .homeContainer .homeCard .homeCardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;  
+    width: 28rem;
+    height: 31rem;
+    background-color: #7C66C5;
+    box-shadow: 8px 8px var(--neon_green);
+}
+
+.MyHome .homeContainer .homeCard .homeCardContainer .imgg{
+    width: 22rem;
+    height: 22rem;
+    margin-bottom: 1rem;
+}
+
+.MyHome .homeContainer .homeCard .homeCardContainer .imgg img{
+    width: 22rem;
+    height: 22rem;
+    object-fit: cover;
+}
+
+.MyHome .homeContainer .homeCard .homeCardContainer .BigText{
+    font-size: 1.2rem;
+}
+
+.MyHome .homeContainer .homeCard .homeCardContainer .SmallText{
+    margin-right: 5rem;
+    margin-left: 5rem;
+    font-size: 0.9rem;
+    font-family: 'Gabarito', sans-serif;
+    opacity: 80%;
+    text-align: center;
+}

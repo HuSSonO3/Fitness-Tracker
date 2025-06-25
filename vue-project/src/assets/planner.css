@@ -1,0 +1,128 @@
+
+
+.body{
+    background-color: #242725;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+}
+    
+.MyPlanner{
+    margin-top: 4.6rem;
+    font-family: "Antonio", sans-serif;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.MyPlanner h2{
+    color: #7C66C5;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.MyPlanner .workoutContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.MyPlanner .workoutContainer h4{
+    color: #7C66C5;
+}
+
+.MyPlanner .workoutContainer .rightSideHolder{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.MyPlanner .nextAndBack{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-right: 1.5rem;
+}
+
+.MyPlanner .nextAndBack .Next, .MyPlanner .nextAndBack .Back {
+    
+}
+
+.MyPlanner .workoutContainer .rightSideHolder .searchContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.MyPlanner .workoutContainer .rightSideHolder .searchContainer .searchResults {
+    display: none;
+    position: absolute;
+    background-color: var(--purple_bg);
+    top: 2rem;
+    min-width: 15rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.MyPlanner .workoutContainer .rightSideHolder .searchContainer:hover .searchResults{
+    display: block;
+}
+
+.MyPlanner .workoutContainer .rightSideHolder .searchContainer .search {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+input{
+    padding-left: 0.5rem;
+    width: 15rem;
+    height: 2rem;
+    color: black;
+    background-color: rgba(255,255,255, 0.8);
+    border-radius: 0;
+    box-shadow: 4px 4px #789F86;
+}
+
+input:focus{
+    outline: none;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: rgba(255,255,255, 0.8);
+    border-radius: 0;
+    box-shadow: 4px 4px #789F86;
+}
+
+.MyPlanner .workoutContainer .rightSideHolder .button{
+    align-self: flex-end;
+    border: none;
+    background-color: var(--neon_green);
+    box-shadow: 8px 8px var(--purple_bg);
+}
+
+.MyPlanner .workoutContainer .rightSideHolder .search  .searchIcon {
+    position: relative;
+    bottom: 1.85rem;
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: black;
+    align-self: flex-end;
+    opacity: 80%;
+}
+
+.MyPlanner .cards{
+    margin-top: 2rem;
+    margin-left: 7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
