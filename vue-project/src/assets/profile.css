@@ -1,0 +1,509 @@
+
+.body{
+    background-color: #242725;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+}
+    
+.MyProfile{
+    margin-top: 4.6rem;
+    font-family: "Antonio", sans-serif;
+    margin-left: 3rem;
+    
+}
+
+
+.MyProfile h2{
+    color: #7C66C5;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.MyProfile .profileContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.MyProfile .profileContainer .ImgAndName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+}
+
+.MyProfile .profileContainer .image{
+    margin-right: 2.5rem;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.MyProfile .profileContainer .image img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.button{
+    border: none;
+    background-color: var(--neon_green);
+    box-shadow: 8px 8px var(--purple_bg);
+}
+
+.MyProfile .profileContainer .buttonsContainerProfile{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    
+}
+
+.MyProfile .profileContainer .nameContainer{
+    display: flex;
+    flex-direction: column;
+    font-family: "Gabarito", sans-serif;
+    margin-right: 60rem; 
+    /* NEEEEEEEEEEEEEEEEEEDDDDDDDDDDDDDDDDD TO CHANGE FOR RESPOSIVITY */
+}
+
+.MyProfile .profileContainer .nameContainer .name1{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.MyProfile .profileContainer .nameContainer .name2{
+    font-size: 1.1rem;
+    color: white;
+    opacity: 50%;
+}
+
+.MyProfile .profileContainer .buttonsContainerProfile .editButtonProfile{
+    width: 4rem;
+}
+
+
+.seperator{
+    height: 0.1rem;
+    width: 35rem;
+    background-color: #73FF1D;
+    align-self: center;
+}
+
+.MyPerInfo{
+    font-family: "Gabarito", sans-serif;
+    margin-left: 3rem;
+}
+
+.MyPerInfo .error{
+    color: darkred;
+    margin-bottom: 0;
+}
+
+.MyPerInfo h4{
+    color: #7C66C5;
+    font-family: "Antonio", sans-serif;
+    font-size: 2rem;
+}
+
+.MyPerInfo .PerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+.MyPerInfo .PerContainer .editButtonInfo{
+    font-family: "Antonio", sans-serif;
+    width: 4rem;
+    height: 1.8rem;
+
+}
+
+.MyPerInfo .InfoContainer{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.MyPerInfo .InfoContainer .smallContainer{
+    height: 8rem;
+    width: 40rem;
+}
+
+.MyPerInfo .InfoContainer .name1{
+    opacity: 50%;
+    font-size: 1.2rem;
+}
+
+.DeleteContainer{
+    font-family: "Gabarito", sans-serif;
+    margin-left: 6rem;
+    margin-bottom: 4rem;
+    margin-right: 6rem;
+    border: 1px solid white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.DeleteContainer p{
+    opacity: 50%;
+}
+
+.DeleteContainer .deleteButton{
+    background-color: #A9080B;
+    box-shadow: 8px 8px var(--neon_green);
+    width: 4rem;
+    align-self: center;
+    font-family: "Antonio", sans-serif;
+    color: white;
+}
+
+
+/*  */
+.popup-enter-active,
+.popup-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.popup-enter-from,
+.popup-leave-to {
+  opacity: 0;
+}
+
+.pic-popup-holder{
+    z-index: 1000;
+    position: fixed;
+    top: 25%;
+    left: 28%;
+    background-color: #473093;
+    width: 40rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px var(--neon_green);
+}
+
+
+
+.pic-popup-holder .topImage{
+    position: absolute;
+    top: -3rem;
+    left: 17.5rem;
+}
+
+.pic-popup-holder .exitContainer {
+    align-self: flex-end;
+    padding: 0.5rem;
+}
+
+.pic-popup-holder .exitContainer .exitImage{
+    width: 3rem;
+    height: 3rem;
+}
+
+.pic-popup-holder .userImage{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.pic-popup-holder .editText{
+    font-size: 2rem;
+}
+.pic-popup-holder .extraText{
+    font-size: 1rem;
+    opacity: 60%;
+    margin-top: 1rem;
+}
+
+.pic-popup-holder form{
+    
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;  
+}
+
+.pic-popup-holder label{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 0.5em;
+    background-color: var(--neon_green);
+    border: transparent;
+    box-shadow: 8px 8px var(--purple_bg);
+}
+
+.pic-popup-holder input[type="file"] {
+    display: none;
+}
+
+/*  */
+
+
+.pass-popup-holder{
+    z-index: 1000;
+    position: fixed;
+    top: 25%;
+    left: 28%;
+    background-color: #473093;
+    width: 40rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px var(--neon_green);
+    
+}
+
+.pass-popup-holder .error{
+    color: darkred;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+
+.pass-popup-holder .topImage{
+    position: absolute;
+    top: -3rem;
+    left: 17.5rem;
+}
+
+.pass-popup-holder .exitContainer {
+    align-self: flex-end;
+    padding: 0.5rem;
+}
+
+.pass-popup-holder .exitContainer .exitImage{
+    width: 3rem;
+    height: 3rem;
+}
+
+.pass-popup-holder .userImage{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.pass-popup-holder .editText{
+    font-size: 2rem;
+}
+.pass-popup-holder .extraText{
+    font-size: 1rem;
+    opacity: 60%;
+    margin-top: 1rem;
+}
+
+
+.pass-popup-holder .formChangePass{
+    width: 25rem;
+    margin-bottom: 1.5rem;
+}
+
+.pass-popup-holder .formChangePass .form-label{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.pass-popup-holder .formChangePass .form-control{
+    color: black;
+    border-radius: 0;
+    border: 0.2rem solid var(--neon_green);
+    box-shadow: 8px 8px var(--purple_bg);
+}
+
+/*  */
+
+.info-popup-holder{
+    z-index: 1000;
+    position: fixed;
+    top: 20%;
+    left: 28%;
+    background-color: #473093;
+    width: 40rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px var(--neon_green);
+    font-family: 'Antonio', sans-serif;
+}
+
+
+.info-popup-holder .topImage{
+    position: absolute;
+    top: -3rem;
+    left: 17.5rem;
+}
+
+.info-popup-holder .exitContainer {
+    align-self: flex-end;
+    padding: 0.5rem;
+}
+
+.info-popup-holder .exitContainer .exitImage{
+    width: 3rem;
+    height: 3rem;
+}
+
+.info-popup-holder .userImage{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.info-popup-holder .editText{
+    font-size: 2rem;
+}
+
+.info-popup-holder .formChangeInfo{
+    width: 25rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.info-popup-holder .formChangeInfo .form-label{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.info-popup-holder .formChangeInfo .passSize{
+    width: fit-content;
+}
+
+
+.info-popup-holder .formChangeInfo .form-control{
+    color: black;
+    border-radius: 0;
+    border: 0.2rem solid var(--neon_green);
+    box-shadow: 8px 8px var(--purple_bg);
+}
+
+.info-popup-holder .formChangeInfo .dateForm{
+    width: 10rem;
+}
+
+.info-popup-holder .formChangeInfo .nameContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.info-popup-holder .formChangeInfo .nameContainer .form-control{
+    width: 10rem;
+}
+
+.info-popup-holder .formChangeInfo .heightandWeight{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.info-popup-holder .formChangeInfo .phoneAndEmail{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.info-popup-holder .formChangeInfo .passAndDate{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.info-popup-holder .formChangeInfo .phoneAndCountry .form-control{
+    width: 10rem;
+}
+
+
+/*  */
+
+.delete-popup-holder{
+    z-index: 1000;
+    position: fixed;
+    top: 32%;
+    left: 28%;
+    background-color: #473093;
+    width: 40rem;
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px var(--neon_green);
+    font-family: 'Antonio', sans-serif;
+}
+
+
+.delete-popup-holder .topImage{
+    position: absolute;
+    top: -3rem;
+    left: 17.5rem;
+}
+
+.delete-popup-holder .exitContainer {
+    align-self: flex-end;
+    padding: 0.5rem;
+}
+
+.delete-popup-holder .exitContainer .exitImage{
+    width: 3rem;
+    height: 3rem;
+}
+
+.delete-popup-holder .deleteText{
+    color: white;
+    opacity: 100%;
+    font-size: 2rem;
+}
+
+.delete-popup-holder .extraText{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 1rem;
+    opacity: 60%;
+    font-family: 'Gabarito', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.delete-popup-holder .finalDelete{
+    background-color: #A9080B;
+    color: white;
+    width: 4rem;
+    box-shadow:6px 6px var(--neon_green);
+}
+
+.shadow{
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.shadow-enter-active,
+.shadow-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.shadow-enter-from,
+.shadow-leave-to {
+  opacity: 0;
+}
+

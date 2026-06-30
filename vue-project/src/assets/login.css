@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Gabarito&display=swap');
+
+
+
+.main-bg-login{
+    margin-top: 4rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)), linear-gradient(0deg, rgba(115, 255, 29, 0.48), rgba(115, 255, 29, 0.48)), linear-gradient(0deg, rgba(115, 255, 29, 0.86), rgba(115, 255, 29, 0.86)), linear-gradient(0deg, rgba(115, 255, 29, 0.18), rgba(115, 255, 29, 0.18)), url("./images/login-bg.jpeg");
+    background-blend-mode: normal, hue, soft-light, multiply, normal;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height: 100vh;
+}
+
+.main-bg-login .contianerReg
+{
+    width: 100%;
+    font-family: "Antonio", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items: center;
+}
+
+.main-bg-login .contianerReg .register-card{
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items :stretch;
+    background-color: white;
+    box-shadow: 8px 8px 4px var(--purple_bg);
+
+    padding-left: 7vw;
+    padding-right: 7vw;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 8rem;
+    width: 35%;
+}
+
+
+
+.main-bg-login .contianerReg  .SignupText{
+    color: var(--neon_green);
+
+    text-shadow: 6px 6px var(--purple_bg);
+    width: fit-content;
+
+    font-size: 8rem;
+    position: absolute;
+    top: 5rem;
+    left: 20rem;
+}
+
+
+.main-bg-login .error{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    color: darkred;
+}
+
+/* @media screen and (min-width: 1100px) {
+    .main-bg-login .contianerReg .register-card{
+        padding-left: 4vw;
+        padding-right: 4vw;
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        min-width: 40vw;
+    }
+
+    .main-bg-login .contianerReg .SignupText{
+        font-size: 8rem;
+        padding-bottom: 0rem;
+        margin-bottom: 32rem;
+    }
+} */
+
+.main-bg-login .login-card-form{
+    margin-top: 1rem;
+}
+
+.main-bg-login .contianerReg .register-card .form-label{
+    color: black;
+    font-size: 1.3rem;
+    text-shadow: 1.5px 1.5px var(--neon_green);
+}
+
+.main-bg-login .contianerReg .register-card .form-control{
+    color: black;
+    border-radius: 0;
+    border: 0.2rem solid var(--neon_green);
+    text-shadow: 0.5px 0.5px var(--neon_green);
+    box-shadow: 8px 8px var(--purple_bg);
+}
+
+.main-bg-login .contianerReg .register-card .checkbox-below{
+    font-family: "Gabarito", sans-serif;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0.5rem;
+    
+}
+
+/* Hide the browser's default checkbox */
+/* Thanks To
+ https://moderncss.dev/pure-css-custom-checkbox-style/ 
+*/
+.main-bg-login .contianerReg .register-card .checkbox-below input[type=checkbox] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: var(--purple_bg);
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.2rem solid var(--purple_bg);
+    transform: translateY(0.2rem);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.main-bg-login .contianerReg .register-card .checkbox-below input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    position: absolute;
+    top: 0.1em;
+    left: 0.1em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--purple_bg);
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+  
+.main-bg-login .contianerReg .register-card .checkbox-below input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+  
+
+.main-bg-login .contianerReg .register-card .goToReg{
+    font-family: "Gabarito", sans-serif;
+    color:black;
+    
+}
+.main-bg-login .contianerReg .register-card .goToReg a{
+    font-family: "Gabarito", sans-serif;
+    color:var(--purple_bg);
+    text-decoration: none;
+    text-shadow: 2px 2px var(--neon_green);
+    
+}
+
+
+.main-bg-login .contianerReg .register-card .SubmitBtn{
+    font-family: "Antonio", sans-serif;
+    background-color: var(--neon_green);
+    color: black;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px var(--purple_bg);
+}
+
+

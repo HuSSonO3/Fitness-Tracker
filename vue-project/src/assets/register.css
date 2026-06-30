@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Gabarito&display=swap');
+
+
+.main-bg{
+    display: block;
+}
+
+.main-bg .contianerReg
+{
+    margin-top: 4.6rem;
+    /* height: 100vh; */
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Antonio", sans-serif;
+    background-image: url("./images/register-bg.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.main-bg .contianerReg .register-card{
+    background-color: white;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    box-shadow: 8px 8px 4px var(--purple_bg);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-bg .contianerReg .register-card .SignupText{
+    color: var(--neon_green);
+    position: absolute;
+    top: 16rem;
+    right: 15rem;
+    text-shadow: 6px 6px var(--purple_bg);
+    font-size: 7rem;
+}
+
+/* .main-bg .contianerReg .register-card .SignupText{
+    color: var(--neon_green);
+    position: absolute;
+    text-shadow: 6px 6px var(--purple_bg);
+    
+} */
+
+/* @media screen and (max-width: 567px) {
+    .main-bg .contianerReg .register-card{
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+    .main-bg .contianerReg .register-card .SignupText{
+        font-size: 2.5rem;
+        top: 5rem;
+        left: 36vw;
+        width: 10rem;
+    }
+}
+
+@media screen and (min-width: 567px) {
+    .main-bg .contianerReg .register-card{
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+    .main-bg .contianerReg .register-card .SignupText{
+        font-size: 3rem;
+        top: 5rem;
+        left: 41vw;
+        width: 15rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .main-bg .contianerReg .register-card{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .main-bg .contianerReg .register-card .SignupText{
+        font-size: 3rem;
+        top: 4.8rem;
+        left: 43vw;
+        width: 15rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .main-bg .contianerReg .register-card{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .main-bg .contianerReg .register-card .SignupText{
+        font-size: 8rem;
+        top: 12rem;
+        left: 66vw;
+        width: 15rem;
+    }
+} */
+
+
+/* @media screen and (min-width: 1200px) {
+    .main-bg .contianerReg .register-card{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .main-bg .contianerReg .register-card .SignupText{
+        font-size: 8rem;
+        top: 12rem;
+        left: 64vw;
+        width: 15rem;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .main-bg .contianerReg .register-card{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .main-bg .contianerReg .register-card .SignupText{
+        line-height: 10rem;
+        left: 62vw;
+        width: 5rem;
+        font-size: 10rem;
+        top: 12rem;
+    }
+} */
+
+.main-bg .error{
+    font-size: 0.8rem;
+    color: darkred;
+}
+
+.main-bg .contianerReg .register-card .form-label{
+    color: black;
+    font-size: 1.3rem;
+    text-shadow: 1.5px 1.5px var(--neon_green);
+}
+
+.main-bg .contianerReg .register-card .form-control{
+    color: black;
+    border-radius: 0;
+    border: 0.2rem solid var(--neon_green);
+    text-shadow: 0.5px 0.5px var(--neon_green);
+    box-shadow: 8px 8px var(--purple_bg);
+}
+
+.main-bg .contianerReg .register-card .checkbox-belowR{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-bg .contianerReg .register-card .checkbox-belowR .checkbox-container{
+    font-family: "Gabarito", sans-serif;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0.5rem;
+    
+}
+
+/* Hide the browser's default checkbox */
+/* Thanks To
+ https://moderncss.dev/pure-css-custom-checkbox-style/ 
+*/
+.main-bg .contianerReg .register-card .checkbox-belowR input[type=checkbox] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: var(--purple_bg);
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.2rem solid var(--purple_bg);
+    transform: translateY(0.2rem);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.main-bg .contianerReg .register-card .checkbox-belowR input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    position: absolute;
+    top: 0.1em;
+    left: 0.1em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1rem 1rem var(--purple_bg);
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+  
+.main-bg .contianerReg .register-card .checkbox-belowR input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+  
+
+.main-bg .contianerReg .register-card .goToReg{
+    font-family: "Gabarito", sans-serif;
+    color:black;
+    
+}
+.main-bg .contianerReg .register-card .goToReg a{
+    font-family: "Gabarito", sans-serif;
+    color:var(--purple_bg);
+    text-decoration: none;
+    text-shadow: 2px 2px var(--neon_green);
+    
+}
+
+
+.main-bg .contianerReg .register-card .SubmitBtn{
+    font-family: "Antonio", sans-serif;
+    background-color: var(--neon_green);
+    color: black;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px var(--purple_bg);
+}

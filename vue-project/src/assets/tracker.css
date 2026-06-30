@@ -1,0 +1,386 @@
+
+
+.body{
+    background-color: #242725;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    min-height: 100vh;
+
+    /*  FIX HEIGHT LATER ! WHEN EMPTY THERE IS SOME EXTRA WHITE IN THE FOOTER */
+}
+    
+.MyFitnessWorkout{
+    margin-top: 4.6rem;
+    font-family: "Antonio", sans-serif;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    height: 50%;
+}
+
+
+.MyFitnessWorkout h2{
+    color: #7C66C5;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.MyFitnessWorkout .workoutContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 69rem;
+    margin-bottom: 1rem;
+}
+
+.MyFitnessWorkout .workoutContainer h4{
+    color: #7C66C5;
+}
+
+.MyFitnessWorkout .workoutContainer .rightSideHolder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .MyFitnessWorkout .workoutContainer .rightSideHolder .Next , .MyFitnessWorkout .workoutContainer .rightSideHolder .Back {
+    width: 2rem;
+    height: 2rem;
+} */
+/*  */
+.MyFitnessSteps{
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-family: "Antonio", sans-serif;
+    margin-left: 3rem;
+    height: 50%;   
+}
+
+.MyFitnessSteps .stepsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 70rem;
+    margin-bottom: 1rem;
+}
+
+.MyFitnessSteps .stepsContainer h4{
+    color: #7C66C5;
+}
+
+.MyFitnessSteps .stepsContainer .rightSideHolder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .MyFitnessSteps .stepsContainer .rightSideHolder .Next , .MyFitnessSteps .stepsContainer .rightSideHolder .Back {
+    width: 2rem;
+    height: 2rem;
+} */
+
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+
+.button{
+    border: none;
+    background-color: var(--neon_green);
+    box-shadow: 8px 8px var(--purple_bg);
+}
+
+
+.seperator{
+    height: 0.1rem;
+    width: 35rem;
+    background-color: #73FF1D;
+    align-self: center;
+}
+
+.MyPerInfo{
+    font-family: "Gabarito", sans-serif;
+    margin-left: 3rem;
+}
+
+.MyPerInfo h4{
+    color: #7C66C5;
+    font-family: "Antonio", sans-serif;
+    font-size: 2rem;
+}
+
+.MyPerInfo .PerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+.MyPerInfo .PerContainer .editButtonInfo{
+    font-family: "Antonio", sans-serif;
+    width: 4rem;
+    height: 1.8rem;
+
+}
+
+.MyPerInfo .InfoContainer{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.MyPerInfo .InfoContainer .smallContainer{
+    height: 8rem;
+    width: 40rem;
+}
+
+.MyPerInfo .InfoContainer .name1{
+    opacity: 50%;
+    font-size: 1.2rem;
+}
+
+.DeleteContainer{
+    font-family: "Gabarito", sans-serif;
+    margin-left: 6rem;
+    margin-bottom: 4rem;
+    margin-right: 6rem;
+    border: 1px solid white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.DeleteContainer p{
+    opacity: 50%;
+}
+
+.DeleteContainer .deleteButton{
+    background-color: #A9080B;
+    box-shadow: 8px 8px var(--neon_green);
+    width: 4rem;
+    align-self: center;
+    font-family: "Antonio", sans-serif;
+    color: white;
+}
+
+/*  */
+
+
+.workout-popup-holder{
+    z-index: 1000;
+    position: fixed;
+    top: 20%;
+    left: 28%;
+    background-color: #473093;
+    width: 40rem;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px var(--neon_green);
+    font-family: 'Antonio', sans-serif;
+}
+
+
+.workout-popup-holder .topImage{
+    position: absolute;
+    top: -3rem;
+    left: 17.5rem;
+}
+
+.workout-popup-holder .exitContainer {
+    align-self: flex-end;
+    padding: 0.5rem;
+}
+
+.workout-popup-holder .exitContainer .exitImage{
+    width: 3rem;
+    height: 3rem;
+}
+
+.workout-popup-holder .userImage{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.workout-popup-holder .editText{
+    font-size: 2rem;
+}
+
+.workout-popup-holder .formAddWorkout{
+    width: 25rem;
+    margin-bottom: 1.5rem;
+}
+
+.workout-popup-holder .formAddWorkout .error{
+    color: darkred;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+
+.workout-popup-holder .formAddWorkout .form-label{
+    font-size: 1.3rem;
+}
+
+
+.workout-popup-holder .formAddWorkout .form-control{
+    border-radius: 0;
+    border: 0.2rem solid var(--neon_green);
+    box-shadow: 8px 8px var(--purple_bg);
+}
+
+.workout-popup-holder .formAddWorkout .TypeAndMuscels{
+    display: flex;
+    flex-direction: column;
+}
+
+.workout-popup-holder .formAddWorkout .TypeAndMuscels .smallerContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.workout-popup-holder .formAddWorkout .TypeAndMuscels .form-control{
+    width: 10rem;
+}
+
+.workout-popup-holder .formAddWorkout .intensityAndTime{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.workout-popup-holder .formAddWorkout .intensityAndTime .form-control{
+    width: 10rem;
+}
+
+/*  */
+
+
+.steps-popup-holder{
+    z-index: 1000;
+    position: fixed;
+    top: 20%;
+    left: 28%;
+    background-color: #473093;
+    width: 40rem;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px var(--neon_green);
+    font-family: 'Antonio', sans-serif;
+}
+
+
+.steps-popup-holder .topImage{
+    position: absolute;
+    top: -3rem;
+    left: 17.5rem;
+}
+
+.steps-popup-holder .exitContainer {
+    align-self: flex-end;
+    padding: 0.5rem;
+}
+
+.steps-popup-holder .exitContainer .exitImage{
+    width: 3rem;
+    height: 3rem;
+}
+
+.steps-popup-holder .userImage{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.steps-popup-holder .editText{
+    font-size: 2rem;
+}
+
+.steps-popup-holder .formAddSteps{
+    width: 25rem;
+    margin-bottom: 1.5rem;
+}
+
+.steps-popup-holder .formAddSteps .error{
+    color: darkred;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+
+.steps-popup-holder .formAddSteps .form-label{
+    font-size: 1.3rem;
+}
+
+
+.steps-popup-holder .formAddSteps .form-control{
+    border-radius: 0;
+    border: 0.2rem solid var(--neon_green);
+    box-shadow: 8px 8px var(--purple_bg);
+}
+
+.steps-popup-holder .formAddSteps .TypeAndMuscels{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.steps-popup-holder .formAddSteps .TypeAndMuscels .form-control{
+    width: 10rem;
+}
+
+.steps-popup-holder .formAddSteps .intensityAndTime{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.steps-popup-holder .formAddSteps .intensityAndTime .form-control{
+    width: 10rem;
+}
+
+.MyFitnessWorkout .cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.MyFitnessWorkout .cards .nothing{
+    font: 1.5rem "Antonio", sans-serif;
+    color: var(--neon_green);
+    text-align: center;
+    margin-left: 30rem;
+}
+
+.MyFitnessSteps .cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.MyFitnessSteps .cards .nothing{
+    font: 1.5rem "Antonio", sans-serif;
+    color: var(--neon_green);
+    text-align: center;
+    margin-left: 30rem;
+}
